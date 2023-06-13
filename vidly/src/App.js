@@ -9,12 +9,14 @@ import NavBar from './components/common/navbar';
 import MovieForm from './components/movieForm';
 import LoginForm from './components/loginForm'; 
 import registerForm from './components/register';
-
+import {ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 class App extends Component {
   render() {
     return (
       <React.Fragment>
 <NavBar/>
+<ToastContainer />
       <main className="container">
         <Switch>
           <Route path="/movies/:id" component={MovieForm} />
